@@ -39,7 +39,6 @@ let animation;
 function validate(e){
     clearInterval(animation);
     e.preventDefault();
-
     let quizMark = $("#quizzes").val();
     let ass1 = $("input[name=assignment1]").val();
     let ass2 = $("input[name=assignment2]").val();
@@ -93,7 +92,7 @@ function displayFinalGrades() {
     $.get("http://localhost/GradeCalculatorFinal/PHP/calculate.php", form, function(data) {
         let newData = JSON.parse(data)
         console.log(newData);
-        $("#resultMark").html("Your final mark is " + newData["mark"])
+        $("#resultMark").html("Your final mark is " + newData["mark"] + "%")
         $("#resultGrade").html(newData["grade"])
         $("#description").slideUp(400);
         if (newData["grade"] === "You have achieved a High Distinction") {

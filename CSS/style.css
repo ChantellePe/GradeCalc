@@ -51,7 +51,7 @@ body {
     position: relative;
 }
 
-.content {
+.content, noscript {
     width: 100%;
     align-content: center;
 
@@ -68,20 +68,19 @@ h1 {
     text-align: center;
 }
 
-p {
+p, noscript {
     font-family: Leelawadee, "Lucida Sans", sans-serif;
     font-size: 1.4em;
     color:floralwhite;
 }
 
-.content h1, p {
+h1, p, noscript{
     position: relative;
     text-align: center;
-
 }
 
 #error {
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: whitesmoke;
     text-align: center;
     background-color: #640202;
@@ -124,6 +123,10 @@ label {
 
 }
 
+noscript > img {
+    width: 60%;
+    margin-left: 18%;
+}
 
 form{
     font-family: Leelawadee, "Lucida Sans", sans-serif;

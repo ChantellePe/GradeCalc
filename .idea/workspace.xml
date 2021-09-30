@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="CHanges to layout">
+    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Font size changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/poll.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/poll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -144,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632975339833</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Font size changes">
+      <created>1632980294436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1632980294436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +190,7 @@
     <MESSAGE value="WHat is this file" />
     <MESSAGE value="Fixed the AJAX!!!" />
     <MESSAGE value="CHanges to layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="CHanges to layout" />
+    <MESSAGE value="Font size changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Font size changes" />
   </component>
 </project>

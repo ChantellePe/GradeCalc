@@ -1,8 +1,37 @@
-$(function() {
+ $(function() {
     $("#calcGrades").on("click", validate);
+     $("input[name=poll]").on("click", submit_poll);
     $("#grades input[type=reset]").on("click", resetPage);
     $("input").on("click", removeError)
 });
+
+function submit_poll(e) {
+    e.preventDefault();
+    const $vote = $('form input[type=radio]:checked').val();
+    console.log($vote);
+    let button = $("#pollButton");
+    console.log($vote);
+    $.ajax({
+     url: "http://localhost/GradeCalculatorFinal/PHP/recordPoll.php",
+     method: 'POST',
+     data: {"poll": $vote},
+     success: function (data) {
+         console.log("worked"+ data);
+         $("#thanks").removeClass("hidden");
+         $("#poll>legend").addClass("hidden");
+         button.removeClass("button");
+         button.addClass("hidden");
+         $("h3:not(#thanks)").addClass("hidden");
+         $("#poll>fieldset").addClass("hidden");
+     },
+     error: function (jsXHR) {
+         let $e = JSON.parse(jsXHR.responseText);
+         console.log("Status code: " + $e.error);
+         console.log("Error message: " + $e.message);
+     }
+    });
+}
+
 
 function validate(e){
     e.preventDefault();
@@ -82,4 +111,5 @@ function displayFinalGrades() {
 function resetPage() {
     location.reload();
 }
+
 

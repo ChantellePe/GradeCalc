@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="JS/validate.js"></script>
-    <script type="text/javascript" src="JS/poll.js"></script>
 </head>
 <body>
 <h1>COSC260 Grade Calculator</h1>
@@ -34,29 +33,26 @@
                 <input type="radio" id = "excellent" name="poll" value=5>
                 <label for="excellent">Excellent</label>
             </fieldset>
-            <fieldset>
-                <button id = "pollButton" >Cast your vote</button>
-                <h3 id="thanks" class="hidden">Thank you for your vote!!</h3>
-            </fieldset>
+            <h3 id="thanks" class = "hidden">Thank you for your vote!!</h3>
         </form>
     </div>
     <div id="formdiv" style="align-content: center">
-        <form method ="get" id="grades">
+        <form method ="get" id="grades" >
             <fieldset>
                 <label for="quizzes" class="quizzes">Quizzes:
-                    <input id = "quizzes" type="text" name="quizzes" class="input_box" placeholder="enter a number" value="59">
+                    <input id = "quizzes" type="text" name="quizzes" class="input_box" placeholder="enter a number">
                     <span class="out_of">/60&nbsp&nbsp</span>
                 </label>
             </fieldset>
             <fieldset>
                 <label for="assignment1">Assignment One:
-                    <input id = "assignment1" type="text" name="assignment1" class="input_box" placeholder="enter a number" value="98" >
+                    <input id = "assignment1" type="text" name="assignment1" class="input_box" placeholder="enter a number" >
                     <span class="out_of">/100</span>
                 </label>
             </fieldset>
             <fieldset>
                 <label for="assignment2">Assignment Two:
-                    <input id = "assignment2" type="text" name="assignment2" class="input_box" placeholder="enter a number" value="98">
+                    <input id = "assignment2" type="text" name="assignment2" class="input_box" placeholder="enter a number">
                     <span class="out_of">/100</span>
                 </label>
             </fieldset>
@@ -72,7 +68,7 @@
                 </label>
             </fieldset>
             <fieldset>
-                <input type="submit" class="button" id="calcGrades">
+                <input type="submit" class="button" id="calcGrades" value = 'Calculate'>
                 <input type="reset" class="button">
             </fieldset>
             <div id=error></div>

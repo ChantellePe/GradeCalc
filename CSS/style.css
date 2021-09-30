@@ -102,6 +102,9 @@ label {
     float: left;
     text-align: left;
     padding-left: 5%;
+    font-size: 1.1em;
+
+
 }
 
 #omg1, #omg2 {
@@ -122,7 +125,7 @@ label {
 }
 
 
-form[id="grades"] {
+form{
     font-family: Leelawadee, "Lucida Sans", sans-serif;
     font-size: 1em;
     margin-top: 5%;
@@ -198,25 +201,35 @@ input[type="radio"]~label {
     margin-left: 35%;
     position: relative;
     display: block;
-    left: -60px;
+    left: -70px;
+    font-size: 1.2em;
+    top: -4.8px;
+    margin-top: 1%;
+
 }
+
 
 input[type="text"] {
     width: 90px;
     float: right;
     position: relative;
-    height: 24px;
+    height: 20px;
     font-weight: bold;
+    font-size: 1em !important;
 }
+
+input[type="text"]~label {
+
+}
+
+
 
 .hidden {
     display: none;
 }
-
-.quizzes {
+input {
 
 }
-
 
 
 .results {
@@ -247,10 +260,12 @@ input[type="reset"] {
     margin-left: 2%;
 }
 
-input[placeholder="enter a number"] {
-    font-size: 0.6em;
+input::placeholder {
+    font-size: 0.7em ;
 }
 
 @media only screen and (max-width: 600px) {
-
+    #omg1, #omg2 {
+        display: none;
+    }
 }

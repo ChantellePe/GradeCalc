@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Final fix with proper PHP url">
-      <change beforePath="$PROJECT_DIR$/JS/poll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradecalcfinal-master" beforeDir="false" afterPath="$PROJECT_DIR$/gradecalcfinal-master" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Getting over this">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632962101653</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Getting over this">
+      <created>1632963823319</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632963823319</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +136,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -151,6 +155,7 @@
     <MESSAGE value="Fixed Poll with new PHP file location" />
     <MESSAGE value="Deleted and rearranged files" />
     <MESSAGE value="Final fix with proper PHP url" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final fix with proper PHP url" />
+    <MESSAGE value="Getting over this" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting over this" />
   </component>
 </project>

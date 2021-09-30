@@ -1,1 +1,1 @@
-{"Terrible":1,"Bad":0,"Neutral":1,"Good":0,"Excellent":0}
+{"Terrible":0,"Bad":0,"Neutral":0,"Good":0,"Excellent":0}

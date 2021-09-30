@@ -1,7 +1,5 @@
  $(function() {
-    $("#calcGrades").on("click", function(e) {
-        validate(e);
-    });
+    $("#calcGrades").on("click", validate);
      $("input[name=poll]").on("click", submit_poll);
     $("#grades input[type=reset]").on("click", resetPage);
 });
@@ -77,7 +75,6 @@ function addError(message){
 }
 
 function removeError(){
-   // e.preventDefault();
     $("#error").html("");
 }
 
@@ -89,28 +86,33 @@ function displayFinalGrades() {
     let ass3 = $("input[name=assignment3]").val();
     let exam = $("input[name=exam]").val();
     let form = {"quizzes": quizMark, "assignment1": ass1, "assignment2": ass2, "assignment3": ass3, "exam": exam}
-    $.get("http://localhost/GradeCalculatorFinal/PHP/calculate.php", form, function(data) {
-        let newData = JSON.parse(data)
-        console.log(newData);
-        $("#resultMark").html("Your final mark is " + newData["mark"] + "%")
-        $("#resultGrade").html(newData["grade"])
-        $("#description").slideUp(400);
-        if (newData["grade"] === "You have achieved a High Distinction") {
-             animation = setInterval(() => {
-                let $omg1 = $("#omg1");
-                let $omg2 = $("#omg2");
-                $omg2.removeClass("hidden");
-                $omg1.removeClass("hidden");
-                $("#poll").css("display", "none")
-                $omg1.fadeIn();
-                $omg1.fadeOut();
-                $omg2.fadeIn();
-                $omg2.fadeOut();
-            }, 750);
-
+    $.ajax({
+        url: "http://localhost/GradeCalculatorFinal/PHP/calculate.php",
+        method: "GET",
+        data: form,
+        success: function (data) {
+            let newData = JSON.parse(data)
+            console.log(newData);
+            $("#resultMark").html("Your final mark is " + newData["mark"] + "%")
+            $("#resultGrade").html(newData["grade"])
+            $("#description").slideUp(400);
+            if (newData["grade"] === "You have achieved a High Distinction") {
+                animation = setInterval(() => {
+                    let $omg1 = $("#omg1");
+                    let $omg2 = $("#omg2");
+                    $omg2.removeClass("hidden");
+                    $omg1.removeClass("hidden");
+                    $("#poll").css("display", "none")
+                    $omg1.fadeIn();
+                    $omg1.fadeOut();
+                    $omg2.fadeIn();
+                    $omg2.fadeOut();
+                }, 750);
+            }
         }
     });
 }
+
 
 function resetPage() {
     location.reload();

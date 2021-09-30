@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Added noscript for non JS users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/calculate.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/calculate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHP/votes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/votes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632991200339</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added noscript for non JS users">
+      <created>1632995714141</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632995714141</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

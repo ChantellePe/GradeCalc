@@ -10,7 +10,7 @@ window.onload = function() {
         let button = $("#pollButton");
         console.log($vote);
         $.ajax({
-            url: "http://localhost/GradeCalculator%20Final/recordPoll.php",
+            url: "http://localhost/GradeCalculator%20Final/gradecalcfinal-master/PHP/recordPoll.php",
             method: 'POST',
             data: {"poll": $vote},
             success: function (data) {

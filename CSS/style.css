@@ -21,8 +21,6 @@ body {
     background-image: url("1176282.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: scroll;
-
 }
 
 #int_col_left {
@@ -135,7 +133,6 @@ form{
     padding-top: 1%;
     margin-left: auto;
     margin-right: 36%;
-    font-weight: bold;
     display: block;
     text-align: center;
     background-color: rgba(217, 198, 198, 0.95);
@@ -217,7 +214,7 @@ input[type="text"] {
     float: right;
     position: relative;
     height: 20px;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1em !important;
 }
 

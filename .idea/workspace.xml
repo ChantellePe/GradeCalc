@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Added noscript for non JS users">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/votes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/votes.txt" afterDir="false" />
-    </list>
+    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Changed get method to .ajax" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632995714141</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Changed get method to .ajax">
+      <created>1632996508478</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632996508478</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +209,7 @@
     <MESSAGE value="Font size changes" />
     <MESSAGE value="Stopped animation and added client errors" />
     <MESSAGE value="Added noscript for non JS users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added noscript for non JS users" />
+    <MESSAGE value="Changed get method to .ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed get method to .ajax" />
   </component>
 </project>

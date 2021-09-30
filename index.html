@@ -22,8 +22,8 @@
         <img class="hidden" id = "omg2" src="CSS/NicePng_omg-png_4936277.png" alt="OMG OMG OMG">
         <form id="poll">
             <h3>Poll</h3>
-            <legend>How would you rate COSC260?</legend>
             <fieldset>
+                <legend>How would you rate COSC260?</legend>
                 <input type="radio" id = "terrible" name="poll" value=1>
                 <label for="terrible">Terrible</label>
                 <input type="radio" id = "bad" name="poll" value=2>
@@ -41,7 +41,7 @@
 
     </div>
     <div id="formdiv" style="align-content: center">
-        <form id="grades">
+        <form method ="get" id="grades">
             <fieldset>
                 <label for="quizzes" class="quizzes">Quizzes:
                     <input id = "quizzes" type="text" name="quizzes" class="input_box" placeholder="enter a number" value="59">
@@ -78,14 +78,9 @@
             <div id=error></div>
         </form>
     </div>
-
     <article class="results">
-        <div id="resultMark" class="hidden">
-
-        </div>
-        <div id="resultGrade" class="hidden">
-
-        </div>
+        <div id="resultMark"></div>
+        <div id="resultGrade"></div>
     </article>
 </div>
 

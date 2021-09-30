@@ -1,7 +1,7 @@
 <?php
 
 ini_set('display_errors', TRUE);
-header('Content-Type: application/json; charset=utf-8');
+//header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 
 global $finalMark;
@@ -19,19 +19,19 @@ function validate()
 {
     global $error;
     $error = null;
-    if (!isset($_POST)) {
+    if (!isset($_GET)) {
         $error = null;
         return false;
-    } else if (empty($_POST["quizzes"]) || empty($_POST["assignment1"]) || empty($_POST["assignment2"]) || empty($_POST["assignment3"]) || empty($_POST["exam"])) {
+    } else if (empty($_GET["quizzes"]) || empty($_GET["assignment1"]) || empty($_GET["assignment2"]) || empty($_GET["assignment3"]) || empty($_GET["exam"])) {
         $error = "Please enter a value in every field";
         return false;
-    } else if (((int)($_POST["quizzes"]) > 60 || !is_numeric(($_POST["quizzes"])) || ((int)($_POST["quizzes"])) < 0)){
+    } else if (((int)($_GET["quizzes"]) > 60 || !is_numeric(($_GET["quizzes"])) || ((int)($_GET["quizzes"])) < 0)){
         $error = "Please enter a valid quiz mark";
         return false;
-    } else if (((int)($_POST["assignment1"]) > 100 || !is_numeric(($_POST["assignment1"])) || ((int)($_POST["assignment1"])) < 0)) {
+    } else if (((int)($_GET["assignment1"]) > 100 || !is_numeric(($_GET["assignment1"])) || ((int)($_GET["assignment1"])) < 0)) {
         $error = "Please enter a valid assignment 1 mark";
         return false;
-    } else if (((int)($_POST["assignment2"]) > 100 || !is_numeric(($_POST["assignment2"])) || ((int)($_POST["assignment2"])) < 0)) {
+    } else if (((int)($_GET["assignment2"]) > 100 || !is_numeric(($_GET["assignment2"])) || ((int)($_GET["assignment2"])) < 0)) {
         $error = "Please enter a valid assignment 1 mark";
         return false;
     } else {
@@ -44,14 +44,14 @@ function validate()
 function calculate() {
     global $finalMark;
     if (validate()) {
-        if (!isset($_POST)) {
+        if (!isset($_GET)) {
             $finalMark = null;
-        } else if (!empty($_POST)) {
-            $quizzes = $_POST["quizzes"];
-            $ass1 = $_POST["assignment1"];
-            $ass2 = $_POST["assignment2"];
-            $ass3 = $_POST["assignment3"];
-            $exam = $_POST["exam"];
+        } else if (!empty($_GET)) {
+            $quizzes = $_GET["quizzes"];
+            $ass1 = $_GET["assignment1"];
+            $ass2 = $_GET["assignment2"];
+            $ass3 = $_GET["assignment3"];
+            $exam = $_GET["exam"];
             $quizScaled = ((int)$quizzes / 60) * 10;
             $ass1Scaled = ((int)$ass1 / 100) * 10;
             $ass2Scaled = ((int)$ass2 / 100) * 15;
@@ -60,7 +60,7 @@ function calculate() {
             $finalMark = $quizScaled + $ass1Scaled + $ass2Scaled + $ass3Scaled + $examScaled;
             $finalMark = number_format($finalMark, 1);
             global $finalString;
-            $finalString ="Your final mark is ". $finalMark;
+            $finalString = "Your final mark is " . $finalMark;
             global $grade;
             if ($finalMark >= 85) {
                 $grade = "You have achieved a High Distinction";
@@ -72,9 +72,15 @@ function calculate() {
                 $grade = "You have achieved a Pass";
             } else {
                 $grade = "Sorry you Failed";
+
+
+
+
             }
+            $data = array("mark" => $finalMark, "grade" => $grade);
+            print(json_encode($data));
         }
-        print(json_encode($finalMark));
-        print(json_encode($grade));
+
     }
+
 }

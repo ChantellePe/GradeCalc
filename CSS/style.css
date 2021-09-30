@@ -177,8 +177,8 @@ legend {
     text-shadow: #000000;
     text-decoration: #000000;
     font-weight: bold;
-    margin: -2% 5% 3% 5%;
-    font-size: 1.2em;
+    margin: -2% 5% 3% 1%;
+    font-size: 1.3em;
 }
 
 
@@ -206,10 +206,7 @@ input[type="text"] {
     position: relative;
     height: 24px;
     font-weight: bold;
-
-
 }
-
 
 .hidden {
     display: none;
@@ -220,12 +217,13 @@ input[type="text"] {
 }
 
 
+
 .results {
     margin-top: 5%;
     text-align: center;
     font-size: 2em;
     color:black;
-    background-color: rgba(255, 210, 210, 0.79);
+    background-color: rgba(255, 210, 210, 0.9);
 }
 
 .button {

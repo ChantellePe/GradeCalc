@@ -1,6 +1,6 @@
-window.onload = function() {
+$(function() {
     $("#pollButton").on("click", submit_poll);
-};
+});
 
 
     function submit_poll(e) {

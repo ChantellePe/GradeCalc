@@ -7,14 +7,13 @@
     <meta name="author" content="Chantelle Perreau">
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <script type="text/javascript" src="JS/validateJSOnly.js"></script>
-    <script type="text/javascript" src="JS/poll.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/validate.js"></script>
+    <script type="text/javascript" src="JS/poll.js"></script>
 </head>
 <body>
 <h1>COSC260 Grade Calculator</h1>
 <p id="description"> This calculator accepts your assessment grades and calculates your final mark and grade.</p>
-<div class="content">
     <div id="int_col_left">
         <img class="hidden" id = "omg1" src="CSS/NicePng_omg-png_4936277.png" alt="OMG OMG OMG">
     </div>
@@ -35,10 +34,11 @@
                 <input type="radio" id = "excellent" name="poll" value=5>
                 <label for="excellent">Excellent</label>
             </fieldset>
-            <button   id = "pollButton" type = "submit">Cast your vote</button>
-            <h3 id="thanks" class="hidden">Thank you for your vote!!</h3>
+            <fieldset>
+                <button id = "pollButton" >Cast your vote</button>
+                <h3 id="thanks" class="hidden">Thank you for your vote!!</h3>
+            </fieldset>
         </form>
-
     </div>
     <div id="formdiv" style="align-content: center">
         <form method ="get" id="grades">
@@ -82,7 +82,6 @@
         <div id="resultMark"></div>
         <div id="resultGrade"></div>
     </article>
-</div>
 
 </body>
 </html>

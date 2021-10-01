@@ -11,7 +11,7 @@ function submit_poll(e) {
     let button = $("#pollButton");
     console.log($vote);
     $.ajax({
-     url: "http://localhost/GradeCalculatorFinal/PHP/recordPoll.php",
+     url: "https://turing.une.edu.au/~cperreau/recordPoll.php",
      method: 'POST',
      data: {"poll": $vote},
      success: function (data) {
@@ -87,7 +87,7 @@ function displayFinalGrades() {
     let exam = $("input[name=exam]").val();
     let form = {"quizzes": quizMark, "assignment1": ass1, "assignment2": ass2, "assignment3": ass3, "exam": exam}
     $.ajax({
-        url: "http://localhost/GradeCalculatorFinal/PHP/calculate.php",
+        url: "https://turing.une.edu.au/~cperreau/calculate.php",
         method: "GET",
         data: form,
         success: function (data) {

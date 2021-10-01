@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Changed boldness of font" />
+    <list default="true" id="dcbaecd0-935b-45b7-9002-18aa2ccca8c4" name="Changes" comment="Changed boldness of font">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +44,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -74,6 +77,7 @@
       <workItem from="1632614173992" duration="55000" />
       <workItem from="1632614438088" duration="21785000" />
       <workItem from="1632960249068" duration="2390000" />
+      <workItem from="1633088025870" duration="275000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1632960934982</created>
@@ -205,6 +209,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/gradecalcfinal-master" />
+    </ignored-roots>
     <MESSAGE value="Update" />
     <MESSAGE value="Fixed Poll with new PHP file location" />
     <MESSAGE value="Deleted and rearranged files" />
